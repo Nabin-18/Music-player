@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-image: url(background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* opacity: 0.3; */
+  /* justify-content: space-between; */
+}
+.music-player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  margin: 0 20px;
+  /* background-color: pink; */
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+nav i {
+  margin: 8px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  color: #f53192;
+}
+#thumbnail {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 8px solid white;
+  cursor: pointer;
+}
+h3 {
+  font-weight: bold;
+  font-style: oblique;
+  font-family: sans-serif;
+  margin: 8px 0px;
+  color: black;
+  font-size: 1.3rem;
+  /* background-color: #f53192; */
+}
+#singer-name {
+  font-weight: bold;
+  color: #fff;
+}
+#progress {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 6px;
+  background-color: #f53192;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px 0;
+}
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #f53192;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls div {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #f53192;
+  box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+  cursor: pointer;
+}
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background-color: #f53192;
+    color: white;
+}
+
+

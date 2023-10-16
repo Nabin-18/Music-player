@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dcc2de6978.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <i class="fa-solid fa-angle-left"></i>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <img src="image.jpg" id="thumbnail">
+            <h3>Phul Butte sari</h3>
+            <p id="singer-name">Cover singer:Nabin Khanal</p>
+            <audio src="Phul Butte sari.mp3"  id="song"></audio>
+            <input type="range" value="0" id="progress">
+
+
+            <div class="controls">
+                <div>
+                    <i class="fa-solid fa-backward"></i>
+
+                </div>
+                <div onclick="playpause()">
+                    <i class="fa-solid fa-play" id="ctlsong"></i>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
